@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+	<div id="logos">
+	</div>
+
+	<style>
+
+
+	#section{
+	color:gold;
+}
+	</style>
+
+
+	
+    <title>Programs</title>
+    <title>Tuition</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+        <script>
+       
+            var total = 0;
+            function start()
+            {
+            var button = document.getElementById( "calculateButton" );
+            button.addEventListener( "click", calculateTuition, false );
+            }
+            function calculateTuition()
+            {
+            var inputField = document.getElementById( "hoursField" );
+            var hours = parseFloat( inputField.value );
+            var foodField = document.getElementById( "foodField" );
+            var food = parseFloat( foodField.value );
+            var result = document.getElementById( "result" );
+            var cost = document.getElementById( "cost" );
+            var button1 = document.getElementById("button1");
+            var button2 = document.getElementById("button2");
+            total = hours * 1000.00;
+            if (button1.checked)
+            {
+                total += 10000.00;
+            }
+            if (food == 1)
+            {
+                total += 1000.00;
+            }else if (food == 2)
+            {
+                total += 2500.00;
+            }else if (food == 3)
+            {
+                total += 3000.00;
+            }else if (food == 4)
+            {
+                total += 5000.00;
+            }
+            
+            result.innerHTML = "Total cost of attendance: $" + total;
+//            cost.innerHTML = "Total parking charges: $" + total;
+            }
+            window.addEventListener( "load", start, false ); 
+        
+        </script>
+    </head>
+    
+    
+    <body>
+     <a class="header" href="home.html"></a>
+
+    <ul class = "menu">
+	     <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="teachers.html">Teachers</a></li>
+            <li><a href="alumni.html">Alumni</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a class = "active" href="tuition.html">Tuition</a></li>
+        </ul>
+        
+    <div id=section>
+    <p><span style="color: orange; font-size: 150%;">Scholarships</span>:</p>
+        <p><span style="color: red;"> The Tony Stark scholarship</span> - for students who demonstrate
+            ingenuity in supernormal engineering or superhero support technology,
+            apply at <span style="color: silver;"> <u>starkfoundation.com</u></span></p>
+        <p><span style="color: red;"> The Bruce Wayne scholarship </span>- for students who display an
+            outstanding sense of justice and demonstrate community service and
+            leadership skills. apply at <span style="color: silver;"> <u>waynefoundation.com</u></span></p>
+        <p>For application and financial aid information, contact
+            <span style="color: silver;"> <u>jeangrey@notanemail.com</u></span></p>
+    
+    
+    <form method = "post" autocomplete = "on">
+        <p><label>Tuition:
+            <input id = "hoursField" type = "number" placeholder = "Enter Semester hours."></label> (price per credit hour).</p>
+        <p><label>Food:          
+            <input id = "foodField" type = "number" placeholder = "Enter Food option."></label> 
+            <p>1: $1,000.00 - Inter-Galactic prison food.</p>
+            <p>2: $2,500.00 - Krypton Protein and Deluxe Galactic meals.</p>
+            <p>3: $3,0000.00 - Flash Instant Meals (for those with busy schedules).</p>
+            <p>4: $5,000.00 - Human food (for the small-stomached).</p>
+        <p><label>Residency ($10,000.00 for room and board):
+            <br>
+            <input type="radio" name="room" value="1" id="button1"> On Campus<br>
+            <input type="radio" name="room" value="0" id="button2"> Off Campus<br></label></p>
+     
+        <input id = "calculateButton" type = "button" value = "Calculate">
+        </form>
+        
+        <p id = "result"></p>
+        </div>
+    </body>
+</html>

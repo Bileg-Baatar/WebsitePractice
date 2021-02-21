@@ -1,0 +1,532 @@
+
+
+
+<style>
+
+
+#nav{
+	position: relative;
+	
+
+}
+ul.menu {
+  
+  display: block;
+  position: relative;
+  top: 140px;
+  left: 100px;
+  padding: 0;
+  min-width: 200px;
+}
+
+ul.menu li {
+    display: inline;
+}
+
+ul.menu li a {
+    font-family: Impact;
+    color: gold;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: black;	
+    border-radius: 5px 5px 0 0;
+    
+}
+
+ul.menu li a:hover {
+    background-color: red;
+}
+
+ul.menu li a.active{
+    background-color:red;
+}
+
+
+body { /*adds the comic book screentones in the bg*/ 
+    background-image:url(../images/try.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+#logos{
+	
+     background-image: url(../images/logo.png);
+    
+     position:absolute;
+     left:900px;
+     right:0px;
+     top: 0px;
+     width: 400px;
+     height: 200px;
+}
+
+.header { 
+    background-image: url(../images/Header.png);
+    
+     position:absolute;
+     
+     right: 0px;
+     top: 190px;
+     left: 100px;
+     width: 1188px;
+     height: 275px;
+     
+ 
+}
+.header:hover{
+	
+	border:  1px gold solid;
+
+}
+#nav { /*where the nav bar goes*/
+    position: absolute;
+    left: 100px;
+    top:125px;
+    height: 100px;
+    
+
+    max-width: 800px;
+    padding:0px; 
+}
+
+
+#section { /*where the words and pictures of the webpages go*/
+  	background-image: url(../images/background.png);
+    
+    
+    max-width: 1188px;
+    
+    min-height: 1100px;
+    position: absolute;
+    top: 475px;
+    right: 0px;
+    left: 100px;
+	
+	
+    
+}
+#section p{
+	
+	font-family: Impact;
+	font-size: 120%;
+
+}
+.section3 {
+	background-image: url(../images/xav.png);
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	right:0px;
+	height: 580px;
+	width: 574px;
+	}
+.section2{
+	
+	color:yellow;
+	font-family: Impact;
+	font-size: 150%;
+	position: relative;
+	top:100px;
+	left:600px;
+	right: 0px;
+	height: 580 px;
+	width: 500px;
+	
+
+
+
+}
+.section4{
+	
+	background-image: url(../images/campus.jpg);
+	position: relative;
+	top:0px;
+	left:600px;
+	right: 0px;
+	height: 400 px;
+	width:300px;
+	
+
+
+
+}
+.batmanimg{
+	
+	background-image: url(../images/batman.jpg);
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	right:0px;
+	height: 200px;
+	width: 300px;
+}
+.flash{
+	
+	background-image: url(../images/flash.jpg);
+	position: absolute;
+	top: 220px;
+	left: 10px;
+	right:0px;
+	height: 200px;
+	width: 300px;
+}
+.wonder{
+	
+	background-image: url(../images/wonder.jpg);
+	position: absolute;
+	top: 430px;
+	left: 10px;
+	right:0px;
+	height: 200px;
+	width: 300px;
+}
+.green{
+	
+	background-image: url(../images/green.jpg);
+	position: absolute;
+	top: 640px;
+	left: 10px;
+	right:0px;
+	height: 200px;
+	width: 300px;
+}
+.teachBack{
+	background-image: url(../images/back.png);
+	position: absolute;
+	top: 10px;
+	left: 320px;
+	right:0px;
+	height: 830px;
+	width: 850px;
+
+}
+.teacher1{
+	border:5px groove white;
+	position: absolute;
+	top: 10px;
+	left: 20px;
+	right:0px;
+	height: 180px;
+	width: 800px;
+
+}
+.teacher1 p{
+	font-size:120%;
+	font-family: Impact;
+	position: absolute;
+	top:50px;
+	left:10px;
+	color:gold;
+
+}
+.teacher2{
+	border:5px groove white;
+	position: absolute;
+	top: 210px;
+	left: 20px;
+	right:0px;
+	height: 180px;
+	width: 800px;
+
+}
+.teacher2 p{
+	font-size:120%;
+	font-family: Impact;
+	position: absolute;
+	top:50px;
+	left:10px;
+	color:gold;
+}
+.teacher3{
+	
+	position: absolute;
+	top: 425px;
+	left: 20px;
+	right:0px;
+	height: 180px;
+	width: 800px;
+	border:5px groove white;
+
+}
+.teacher3 p{
+	color: gold;
+	font-family: Impact;
+	font-size:120%;
+	position: absolute;
+	top:50px;
+	left:10px;
+
+}
+.teacher4{
+	
+	position: absolute;
+	top: 640px;
+	left: 20px;
+	right:0px;
+	height: 180px;
+	width: 800px;
+	border:5px groove white;
+
+}
+.teacher4 p{
+	color: gold;
+	font-family: Impact;
+	font-size:120%;
+	position: absolute;
+	top:50px;
+	left:10px;
+
+}
+.superman{
+	color: red;
+	position: absolute;
+	top: 20px;
+	left: 330px;
+	right:0px;
+	height: 200px;
+	width: 600px;
+}
+.superman p{
+	position: absolute;
+	top:50px;
+
+
+}
+
+
+.avengers{
+	border-radius:25px;
+	background: black;
+	color: red;
+	position: absolute;
+	top: 320px;
+	left: 700px;
+	right:0px;
+	height: 200px;
+	width: 300px;
+	
+
+
+
+}
+.avengers p{
+
+	position: absolute;
+	top: 30px;
+	left:5px;
+}
+.avengerImg{
+
+	background-image: url(../images/avengers.png);
+	position: absolute;
+	top: 320px;
+	left: 10px;
+	right:0px;
+	height: 300px;
+	width: 650px;
+
+
+
+
+}
+.spiderman{
+	
+	
+	color: red;
+	position: absolute;
+	top: 650px;
+	left: 100px;
+	right:0px;
+	height: 200px;
+	width: 200px;
+	
+
+
+
+}
+.spider{
+	background-image: url(../images/spider.png);
+	position: absolute;
+	top: 650px;
+	left: 400px;
+	right:0px;
+	height: 250px;
+	width: 650px;
+
+
+
+}
+.antman{
+	color:red;
+	position: absolute;
+	top: 910px;
+	left: 550px;
+	right:0px;
+	height: 200px;
+	width: 200px;
+	
+
+
+
+}
+.antman p{
+	position: absolute;
+	top:70px;
+
+
+}
+.ant{
+	background-image: url(../images/ant.png);
+	position: absolute;
+	top: 910px;
+	left: 10px;
+	right:0px;
+	height: 200px;
+	width: 500px;
+
+}
+.add{
+	position:absolute;
+	top:20px;		
+	left:10px;
+	right:0px;
+	height:400px;
+	width:800px;
+	color:gold;
+
+}
+.campus{
+	background-image: url(../images/Campus.png);
+	position: absolute;
+	top: 700px;
+	left: 170px;
+	right: 0px;
+	height: 400px;
+	width: 800px;
+	
+
+}
+
+#footer { /*possibly where copyright info goes*/
+    float: bottom;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px; 
+}
+#main{
+	
+	position:absolute;
+	top:0px;
+	left:50px;
+	right:0px;
+	height: 800px;
+	width: 1300px;
+
+
+
+
+}
+.about1{
+	background-image: url(../images/home1.png);
+	position:absolute;
+	left: 70px;
+	right: 0px;
+	top:20px;
+	height:734px;
+	width:200px;	
+	
+	
+
+
+
+}
+.about2{
+	background-image: url(../images/home2.png);
+	position:absolute;
+	left: 290px;
+	right: 0px;
+	top:60px;
+	height:734px;
+	width:200px;	
+	
+	
+
+
+
+}
+.about3{
+	background-image: url(../images/home3.png);
+	position:absolute;
+	left: 510px;
+	right: 0px;
+	top:20px;
+	height:734px;
+	width:200px;	
+	
+	
+
+
+
+}
+.about4{
+	background-image: url(../images/home4.png);
+	position:absolute;
+	left: 730px;
+	right: 0px;
+	top:60px;
+	height:734px;
+	width:200px;	
+	
+	
+
+
+
+}
+.about5{
+	background-image: url(../images/home5.png);
+	position:absolute;
+	left: 950px;
+	right: 0px;
+	top:20px;
+	height:734px;
+	width:200px;	
+	
+	
+
+
+
+}
+.about1:hover {
+	background-image: url(../images/home9.png);
+	border: 3px solid gold;
+	top:80px;	
+		
+}
+.about2:hover {
+	background-image: url(../images/home8.png);
+	border: 3px solid red;
+	top:0px;	
+		
+}
+.about3:hover {
+	background-image: url(../images/home6.png);
+	border: 3px solid aqua;
+	top:80px;	
+		
+}
+.about4:hover {
+	background-image: url(../images/home7.png);
+	border: 3px solid green;
+	top:0px;	
+		
+}
+.about5:hover {
+	background-image: url(../images/home10.png);
+	border: 3px solid blue;
+	top:80px;	
+		
+}
+
+
+
+</style>         
